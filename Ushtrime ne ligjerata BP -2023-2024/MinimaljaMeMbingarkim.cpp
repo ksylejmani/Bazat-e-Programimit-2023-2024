@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 int minimalja(int a, int b, int c);
 int minimalja(int a, int b, int c, int d);
