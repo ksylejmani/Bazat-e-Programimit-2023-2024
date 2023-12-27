@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 void paga_javore(int no[],int m, float po, float bonusi){
     float paga_baze=0;
