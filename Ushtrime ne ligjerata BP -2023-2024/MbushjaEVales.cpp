@@ -54,12 +54,18 @@ int main(){
     string mesazhi;
     cout<<"Cfare lloji te mbushjes deshironi: ";
     getline(cin,mesazhi);
-    cmimi=llogaritCmiminPerMbushje(mesazhi);
-    if(cmimi!=-1){
-        cout<<"Cmimi per kete lloji te mbushjes eshte: "<<cmimi<<endl;
-    }
-    else{
+    if(mesazhi.size()>5){
         cout<<"Mesazhi nuk eshte valid!\n";
     }
+    else{
+        cmimi=llogaritCmiminPerMbushje(mesazhi);
+        if(cmimi!=-1){
+            cout<<"Cmimi per kete lloji te mbushjes eshte: "<<cmimi<<endl;
+        }
+        else{
+            cout<<"Mesazhi nuk eshte valid!\n";
+        }
+    }
+
     return 0;
 }
