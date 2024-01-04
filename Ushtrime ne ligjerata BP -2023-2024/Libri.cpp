@@ -10,7 +10,7 @@ struct Libri
         cout<<"Viti i botimit: "<<viti_i_botimit<<endl;
         cout<<"Shitjet: "<<shitjet<<endl;
     }   
-    
+
 };
 Libri inicializo(){
     Libri rez;
