@@ -4,7 +4,7 @@ using namespace std;
 const int EMETIMI_MESATAR_CO2_PER_VETURE=272;
 string rajonet[]={"Prishtina","Mitrovica","Peja","Prizreni","Ferizaji","Gjilani","Gjakova"};
 enum rajoni{
-    r01, r02, r03, r04, r05, r06, r07
+    Prishtina, Mitrovica, Peja, Prizreni, Ferizaji, Gjilani, Gjakova
 };
 int llogarit_investimin_ne_vetura(rajoni r,int cmimi_mesatar, int numri_i_veturave);
 int llogarit_emetimin_co2(int numri_i_veturave);
@@ -28,15 +28,15 @@ int llogarit_investimin_ne_vetura(rajoni r,int cmimi_mesatar, int numri_i_vetura
     float rritja_zbritja=0;
     switch (r)
     {
-    case r01:
+    case Prishtina:
         rritja_zbritja=1.1;
         break;
-    case r02:
-    case r03:
-    case r05:
+    case Mitrovica:
+    case Peja:
+    case Ferizaji:
         rritja_zbritja=1.05;
         break;
-    case r04:
+    case Prizreni:
         rritja_zbritja=1.07;
     default:
         rritja_zbritja=1;
